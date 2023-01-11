@@ -8,14 +8,50 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var buttonText = "Start"
+    
+    @State private var redLight = Light(color: .red)
+    @State private var yellowLight = Light(color: .yellow)
+    @State private var greenLight = Light(color: .green)
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(spacing: 20) {
+            
+            redLight
+            yellowLight
+            greenLight
+            
+            Spacer()
+            
+            ChangeLightButton(caption: buttonText,
+                              action: changeLight)
         }
         .padding()
+    }
+}
+
+extension ContentView {
+    
+    private func changeLight() {
+        if redLight.isOn {
+            redLight.turnOff()
+            yellowLight.turnOn()
+            greenLight.turnOff()
+        } else if yellowLight.isOn {
+            redLight.turnOff()
+            yellowLight.turnOff()
+            greenLight.turnOn()
+        } else if greenLight.isOn {
+            redLight.turnOn()
+            yellowLight.turnOff()
+            greenLight.turnOff()
+        } else {
+            redLight.turnOn()
+        }
+        
+        if buttonText == "Start" {
+            buttonText = "Next"
+        }
     }
 }
 

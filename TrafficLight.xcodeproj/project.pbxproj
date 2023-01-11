@@ -11,6 +11,8 @@
 		448FB036296D392D00DD15FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448FB035296D392D00DD15FB /* ContentView.swift */; };
 		448FB038296D392E00DD15FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448FB037296D392E00DD15FB /* Assets.xcassets */; };
 		448FB03B296D392E00DD15FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448FB03A296D392E00DD15FB /* Preview Assets.xcassets */; };
+		448FB042296D3BB900DD15FB /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448FB041296D3BB900DD15FB /* Light.swift */; };
+		448FB048296D6CDE00DD15FB /* ChangeLightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448FB047296D6CDE00DD15FB /* ChangeLightButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		448FB035296D392D00DD15FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		448FB037296D392E00DD15FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		448FB03A296D392E00DD15FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		448FB041296D3BB900DD15FB /* Light.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
+		448FB047296D6CDE00DD15FB /* ChangeLightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLightButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				448FB033296D392D00DD15FB /* TrafficLightApp.swift */,
 				448FB035296D392D00DD15FB /* ContentView.swift */,
+				448FB047296D6CDE00DD15FB /* ChangeLightButton.swift */,
+				448FB041296D3BB900DD15FB /* Light.swift */,
 				448FB037296D392E00DD15FB /* Assets.xcassets */,
 				448FB039296D392E00DD15FB /* Preview Content */,
 			);
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				448FB042296D3BB900DD15FB /* Light.swift in Sources */,
+				448FB048296D6CDE00DD15FB /* ChangeLightButton.swift in Sources */,
 				448FB036296D392D00DD15FB /* ContentView.swift in Sources */,
 				448FB034296D392D00DD15FB /* TrafficLightApp.swift in Sources */,
 			);
